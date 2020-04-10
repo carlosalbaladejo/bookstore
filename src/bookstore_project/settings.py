@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     # Local
     'users.apps.UsersConfig',
     'pages.apps.PagesConfig',
@@ -80,11 +79,11 @@ WSGI_APPLICATION = 'bookstore_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': os.environ.get('SQL_ENGINE', 'django.db.backends.postgresql'),
-        'NAME': os.environ.get('SQL_NAME','postgres'),
-        'USER': os.environ.get('SQL_USER','postgres'),
-        'PASSWORD': os.environ.get('SQL_PASSWORD','postgres'),
-        'HOST': os.environ.get('SQL_HOST','db'),
-        'PORT': os.environ.get('SQL_PORT',5432)
+        'NAME': os.environ.get('SQL_NAME', 'postgres'),
+        'USER': os.environ.get('SQL_USER', 'postgres'),
+        'PASSWORD': os.environ.get('SQL_PASSWORD', 'postgres'),
+        'HOST': os.environ.get('SQL_HOST', 'db'),
+        'PORT': os.environ.get('SQL_PORT', 5432),
     }
 }
 
@@ -96,9 +95,7 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
+    {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',},
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
