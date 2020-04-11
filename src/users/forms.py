@@ -8,8 +8,8 @@ from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 
 User = get_user_model()
 
-class CustomUserCreationForm(UserCreationForm):
 
+class CustomUserCreationForm(UserCreationForm):
 
     class Meta:
         model = User
@@ -17,7 +17,6 @@ class CustomUserCreationForm(UserCreationForm):
 
 
 class CustomUserChangeForm(UserChangeForm):
-
     class Meta:
         model = User
         fields = ('email', 'username')
