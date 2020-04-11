@@ -11,7 +11,8 @@ black = "*"
 [packages]
 django = "==3.0.5"
 psycopg2-binary = "==2.8.4"
-django-crispy-forms = "*"
+django-crispy-forms = "==1.9.0"
+django-allauth = "==0.41.0"
 
 [requires]
 python_version = "3.8"
