@@ -26,6 +26,7 @@ services:
       POSTGRES_PASSWORD: postgres
     volumes:
       - postgres_data:/var/lib/postgresql/postgres_data
+      - db_data:/var/lib/postgresql/data
     ports:
       - 5432:5432
 
@@ -43,4 +44,5 @@ services:
 
 volumes:
   postgres_data:
+  db_data:
   pgadmin_data:
