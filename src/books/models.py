@@ -17,6 +17,11 @@ class Book(models.Model):
     def get_absolute_url(self):
         return reverse('book_detail', kwargs={"pk": str(self.pk)})
 
+    class Meta:
+        permissions = [
+            ('special_status', 'Can read all books')
+        ]
+
 
 class Review(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
