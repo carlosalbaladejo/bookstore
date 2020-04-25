@@ -11,6 +11,7 @@ services:
       SQL_HOST: ${SQL_HOST}
       SQL_PORT: ${SQL_PORT}
       DEBUG: ${DEBUG}
+      SECRET_KEY: ${SECRET_KEY}
     command: python /app/src/manage.py runserver 0.0.0.0:8000
     user: 'devuser'
     volumes:
