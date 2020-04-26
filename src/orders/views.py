@@ -23,7 +23,7 @@ def charge(request):
 
     # Get user
     user = request.user
-    
+
     # Add permission to user
     user.user_permissions.add(permission)
 
