@@ -3,10 +3,10 @@ setup:
   - plan: heorku-postgresql
 build:
   docker:
-    django: Dockerfile
+    web: Dockerfile
 release:
-  image: django
+  image: web
   command:
     - python manage.py collectstatic --noinput
 run:
-  django: gunicorn bookstore_project.wsgi
+  web: gunicorn bookstore_project.wsgi
