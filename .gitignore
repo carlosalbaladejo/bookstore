@@ -57,3 +57,6 @@ docs/_build/
 
 # media files
 media/
+
+# staticfiles
+staticfiles/

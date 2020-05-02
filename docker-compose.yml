@@ -15,7 +15,8 @@ services:
       SECRET_KEY: ${SECRET_KEY}
       STRIPE_TEST_PUBLISHABLE_KEY: ${STRIPE_TEST_PUBLISHABLE_KEY}
       STRIPE_TEST_SECRET_KEY: ${STRIPE_TEST_SECRET_KEY}
-    command: python /app/src/manage.py runserver 0.0.0.0:8000
+    # command: python /app/src/manage.py runserver 0.0.0.0:8000
+    command: gunicorn bookstore_project.wsgi -b 0.0.0.0:8000
     user: 'devuser'
     volumes:
       - .:/app

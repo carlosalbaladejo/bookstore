@@ -1,0 +1,12 @@
+setup:
+  addons:
+  - plan: heorku-postgresql
+build:
+  docker:
+    django: Dockerfile
+release:
+  image: django
+  command:
+    - python manage.py collectstatic --noinput
+run:
+  django: gunicorn bookstore_project.wsgi
