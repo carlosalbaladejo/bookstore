@@ -18,6 +18,9 @@ class Book(models.Model):
         return reverse('book_detail', kwargs={"pk": str(self.pk)})
 
     class Meta:
+        indexes = [
+            models.Index(fields=['id'], name='id_index'),
+        ]
         permissions = [
             ('special_status', 'Can read all books')
         ]
