@@ -4,14 +4,14 @@ services:
   django:
     build: .
     environment: 
-      ENVIRONMENT: ${ENVIRONMENT}
+      ENVIRONMENT: 'production'
       SQL_ENGINE: ${SQL_ENGINE}
       SQL_NAME: ${SQL_NAME}
       SQL_USER: ${SQL_USER}
       SQL_PASSWORD: ${SQL_PASSWORD}
       SQL_HOST: ${SQL_HOST}
       SQL_PORT: ${SQL_PORT}
-      DEBUG: ${DEBUG}
+      DEBUG: 0
       SECRET_KEY: ${SECRET_KEY}
       STRIPE_TEST_PUBLISHABLE_KEY: ${STRIPE_TEST_PUBLISHABLE_KEY}
       STRIPE_TEST_SECRET_KEY: ${STRIPE_TEST_SECRET_KEY}
