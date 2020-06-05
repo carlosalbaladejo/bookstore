@@ -9,7 +9,7 @@ pylint-django = "*"
 black = "*"
 
 [packages]
-django = "==3.0.5"
+django = "==3.0.7"
 psycopg2-binary = "==2.8.4"
 django-crispy-forms = "==1.9.0"
 django-allauth = "==0.41.0"
