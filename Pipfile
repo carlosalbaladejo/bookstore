@@ -20,6 +20,7 @@ django-debug-toolbar = "==2.2.1"
 whitenoise = "*"
 gunicorn = "*"
 dj-database-url = "*"
+setuptools = ">=70.0.0" 
 
 [requires]
 python_version = "3.8"
