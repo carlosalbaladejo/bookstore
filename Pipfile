@@ -23,7 +23,7 @@ dj-database-url = "*"
 setuptools = ">=70.0.0" 
 
 [requires]
-python_version = "3.8"
+python_version = "3.9"
 
 [pipenv]
 allow_prereleases = true
